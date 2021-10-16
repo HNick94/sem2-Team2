@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="bus_number">Bus #</string>
+    <string name="passenger_number">Boarding</string>
+    <string name="off_Board">Alight</string>
+    <string name="button_submit">Submit</string>
+    <string name="staff_id">Staff ID</string>
+    <string name="station_name">Station</string>
+    <string name="button_login">Login</string>
+    <string name="w13123">W13123</string>
+    <string name="boronia">Boronia</string>
+    <string name="_23">23</string>
+    <string name="bus_num">Bus Num :</string>
+    <string name="from">From :</string>
+    <string name="passengers">Passengers :</string>
+</resources>

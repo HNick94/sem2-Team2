@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/000_SWINBURNE_MA-IT1/Semester 2-August 2021/003_TechnologyDesignProject/Project/Team-2_TDP_MTC-nishant-branch/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/000_SWINBURNE_MA-IT1/Semester 2-August 2021/003_TechnologyDesignProject/Project/Team-2_TDP_MTC/app/src/main/res/layout/activity_data_input_screen.xml" value="0.27314814814814814" />
+        <entry key="..\:/000_SWINBURNE_MA-IT1/Semester 2-August 2021/003_TechnologyDesignProject/Project/Team-2_TDP_MTC/app/src/main/res/layout/activity_main.xml" value="0.27314814814814814" />
+        <entry key="..\:/000_SWINBURNE_MA-IT1/Semester 2-August 2021/003_TechnologyDesignProject/Project/Team-2_TDP_MTC/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
+        <entry key="..\:/000_SWINBURNE_MA-IT1/Semester 2-August 2021/003_TechnologyDesignProject/Project/Team-2_TDP_MTC/app/src/main/res/layout/activity_station_route.xml" value="0.36666666666666664" />
+        <entry key="..\:/000_SWINBURNE_MA-IT1/Semester 2-August 2021/003_TechnologyDesignProject/Project/Team-2_TDP_MTC/app/src/main/res/layout/toolbar.xml" value="0.27314814814814814" />
+        <entry key="..\:/Users/HyunicKim/StudioProjects/Team-2_TDP_MTC/app/src/main/res/layout/activity_data_input_screen.xml" value="0.5" />
+        <entry key="..\:/Users/HyunicKim/StudioProjects/Team-2_TDP_MTC/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/HyunicKim/StudioProjects/Team-2_TDP_MTC/app/src/main/res/layout/activity_register.xml" value="0.32065217391304346" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.14427083333333332" />
+        <entry key="app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_data_input_screen.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_data_screen.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18236058855148224" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.25104166666666666" />
+        <entry key="app/src/main/res/layout/activity_show_next_bus.xml" value="0.33489583333333334" />
+        <entry key="app/src/main/res/layout/activity_station_route.xml" value="0.2176760684770614" />
+        <entry key="app/src/main/res/layout/bus.xml" value="0.33489583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
