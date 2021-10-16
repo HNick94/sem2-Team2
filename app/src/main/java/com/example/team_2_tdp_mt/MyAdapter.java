@@ -12,8 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
-    ArrayList<Model> mList;
-    Context context;
+    private ArrayList<Model> mList;
+    private Context context;
 
     public MyAdapter(Context context, ArrayList<Model> mList){
         this.context = context;
@@ -30,14 +30,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Model model = mList.get(position);
-        holder.busNumber.setText(model.getBus_no());
-        holder.passenger.setText(model.getPassengers());
+        holder.busNumber.setText(model.getbusNumber());
+        holder.passenger.setText(String.valueOf(model.getPassengers()));
 
     }
 
     @Override
     public int getItemCount() {
-        return mList.size();
+        return (mList != null ? mList.size() : 0);
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
@@ -46,7 +46,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            busNumber = itemView.findViewById(R.id.bus_no);
+            busNumber = itemView.findViewById(R.id.busNumber);
 
             passenger = itemView.findViewById(R.id.passenger_info);
 

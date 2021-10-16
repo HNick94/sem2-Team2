@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -16,10 +17,11 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class ShowNextBus extends AppCompatActivity {
-    private RecyclerView recyclerView;
+    RecyclerView recyclerView;
     FirebaseDatabase database;
     DatabaseReference myRef;
-    private MyAdapter adapter;
+    private RecyclerView.Adapter adapter;
+    RecyclerView.LayoutManager layoutManager;
     private ArrayList<Model> list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,28 +29,34 @@ public class ShowNextBus extends AppCompatActivity {
         setContentView(R.layout.activity_show_next_bus);
         recyclerView = findViewById(R.id.recycle_view);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
         list = new ArrayList<>();
-        adapter = new MyAdapter(this,list);
+
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference().child("main");
 
         recyclerView.setAdapter(adapter);
 
-        myRef.addValueEventListener(new ValueEventListener() {
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for(DataSnapshot dataSnapshot: snapshot.getChildren()){
-                    Model model = dataSnapshot.getValue(Model.class);
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                list.clear();
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Model model = snapshot.getValue(Model.class);
                     list.add(model);
+
                 }
                 adapter.notifyDataSetChanged();
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.e("ShowNextBus", String.valueOf(databaseError.toException()));
             }
         });
+
+        adapter = new MyAdapter(this,list);
+        recyclerView.setAdapter(adapter);
     }
 }

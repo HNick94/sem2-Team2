@@ -31,7 +31,7 @@
 
                 android:textStyle="bold"
                 android:layout_marginStart="10dp"
-                android:id="@+id/bus_no" />
+                android:id="@+id/busNumber" />
 
         </LinearLayout>
 
