@@ -14,14 +14,25 @@ public class DataScreen {
     private String busNumber;
     private String passengers;
     private String offBoard;
+    private String goingTo;
     private String currentTime;
 
 
-    public DataScreen(String bNumber, String passengers, String offBoard) {
+    public DataScreen(String bNumber, String passengers, String offBoard,String goingTo) {
         this.busNumber = bNumber;
         this.passengers = passengers;
         this.offBoard = offBoard;
+        this.goingTo = goingTo;
 
+
+    }
+
+    public String getGoingTo() {
+        return goingTo;
+    }
+
+    public void setGoingTo(String goingTo) {
+        this.goingTo = goingTo;
     }
 
     public String getBusNumber() {

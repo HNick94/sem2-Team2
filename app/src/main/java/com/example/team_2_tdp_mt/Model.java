@@ -1,15 +1,24 @@
 package com.example.team_2_tdp_mt;
 
 public class Model {
-    String bus_no;
+    String busNumber;
     String passengers;
+    String goingTo;
 
-    public String getBus_no() {
-        return bus_no;
+    public String getGoingTo() {
+        return goingTo;
     }
 
-    public void setBus_no(String bus_no) {
-        this.bus_no = bus_no;
+    public void setGoingTo(String goingTo) {
+        this.goingTo = goingTo;
+    }
+
+    public String getBus_no() {
+        return busNumber;
+    }
+
+    public void setBus_no(String busNumber) {
+        this.busNumber = busNumber;
     }
 
     public String getPassengers() {

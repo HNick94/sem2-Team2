@@ -32,6 +32,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         Model model = mList.get(position);
         holder.busNumber.setText(model.getBus_no());
         holder.passenger.setText(model.getPassengers());
+        holder.goingTo.setText(model.getGoingTo());
+
 
     }
 
@@ -42,13 +44,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView busNumber,passenger;
+        TextView busNumber,passenger,goingTo;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             busNumber = itemView.findViewById(R.id.bus_no);
-
             passenger = itemView.findViewById(R.id.passenger_info);
+            goingTo = itemView.findViewById(R.id.going_to);
+
 
 
         }

@@ -97,7 +97,7 @@ public class DataInputScreen extends AppCompatActivity {
             String numberOfPass = passengers.getText().toString();
             String getOff = offBoard.getText().toString();
 
-            DataScreen info = new DataScreen(busInfo,numberOfPass,getOff);
+            DataScreen info = new DataScreen(busInfo,numberOfPass,getOff,mySpinner.getSelectedItem().toString());
             myRef.child(busInfo).setValue(info);
             //clear fields after submitting
             busNumber.getText().clear();

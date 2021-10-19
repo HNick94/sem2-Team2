@@ -13,4 +13,5 @@
     <string name="bus_num">Bus Num :</string>
     <string name="from">From :</string>
     <string name="passengers">Passengers :</string>
+    <string name="To">To</string>
 </resources>

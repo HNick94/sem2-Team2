@@ -1,12 +1,14 @@
 package com.example.team_2_tdp_mt;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -29,9 +31,10 @@ public class ShowNextBus extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         list = new ArrayList<>();
-        adapter = new MyAdapter(this,list);
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference().child("main");
+        adapter = new MyAdapter(this,list);
+
 
         recyclerView.setAdapter(adapter);
 

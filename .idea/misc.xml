@@ -20,7 +20,7 @@
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.25104166666666666" />
         <entry key="app/src/main/res/layout/activity_show_next_bus.xml" value="0.33489583333333334" />
         <entry key="app/src/main/res/layout/activity_station_route.xml" value="0.2176760684770614" />
-        <entry key="app/src/main/res/layout/bus.xml" value="0.33489583333333334" />
+        <entry key="app/src/main/res/layout/bus.xml" value="0.33" />
       </map>
     </option>
   </component>
