@@ -6,9 +6,12 @@ import static java.time.LocalTime.*;
 
 import android.widget.TextClock;
 
+import com.google.firebase.database.ServerValue;
+
 import java.time.LocalTime;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Map;
 
 public class DataScreen {
     private String busNumber;
@@ -18,12 +21,12 @@ public class DataScreen {
     private String currentTime;
 
 
+
     public DataScreen(String bNumber, String passengers, String offBoard,String goingTo) {
         this.busNumber = bNumber;
         this.passengers = passengers;
         this.offBoard = offBoard;
         this.goingTo = goingTo;
-
 
     }
 

@@ -14,4 +14,5 @@
     <string name="from">From :</string>
     <string name="passengers">Passengers :</string>
     <string name="To">To</string>
+    <string name="Departed">Departed</string>
 </resources>

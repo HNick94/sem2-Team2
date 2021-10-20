@@ -20,6 +20,8 @@ import com.google.firebase.database.ServerValue;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 public class DataInputScreen extends AppCompatActivity {
     EditText busNumber;
@@ -34,6 +36,7 @@ public class DataInputScreen extends AppCompatActivity {
     ArrayList<String> arrayList_lilyDale, arrayList_belGrave;
     ArrayAdapter<String> arrayAdapter_station;
     String currentTime = java.text.DateFormat.getTimeInstance().format(Calendar.getInstance().getTime());
+    Map map = new HashMap();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,6 +60,7 @@ public class DataInputScreen extends AppCompatActivity {
         arrayList_belGrave.add("Upwey");
         arrayList_belGrave.add("Boronia");
         arrayList_belGrave.add("Bayswater");
+        map.put("timestamp", ServerValue.TIMESTAMP);
 
         int getIndex = getIntent().getIntExtra("pos",0);
         if(getIndex == 0){
@@ -99,6 +103,7 @@ public class DataInputScreen extends AppCompatActivity {
 
             DataScreen info = new DataScreen(busInfo,numberOfPass,getOff,mySpinner.getSelectedItem().toString());
             myRef.child(busInfo).setValue(info);
+            myRef.child(busInfo).updateChildren(map);
             //clear fields after submitting
             busNumber.getText().clear();
             passengers.getText().clear();
