@@ -13,13 +13,12 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="220dp"
-        android:layout_height="42dp"
+        android:layout_width="216dp"
+        android:layout_height="22dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="100dp"
         android:text="Select Bus Line"
-        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,8 +64,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="220dp"
-        android:layout_height="47dp"
+        android:layout_width="221dp"
+        android:layout_height="21dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="100dp"
