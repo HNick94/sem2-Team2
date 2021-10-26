@@ -7,8 +7,11 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Adapter;
+import android.widget.Button;
 import android.widget.SearchView.OnQueryTextListener;
 
 import com.google.firebase.database.ChildEventListener;
@@ -27,6 +30,7 @@ public class ShowNextBus extends AppCompatActivity {
     DatabaseReference myRef;
     private MyAdapter adapter;
     private ArrayList<Model> list;
+    Button btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +43,14 @@ public class ShowNextBus extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference().child("main");
         adapter = new MyAdapter(this,list);
+        btnBack = (Button)findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent I = new Intent(ShowNextBus.this, DataScreen.class);
+                startActivity(I);
+            }
+        });
 
     }
 

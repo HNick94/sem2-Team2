@@ -18,6 +18,7 @@ public class DataScreen {
     private String passengers;
     private String offBoard;
     private String goingTo;
+    private String comingFrom;
     private String currentTime;
 
 
