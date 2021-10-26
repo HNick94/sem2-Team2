@@ -8,6 +8,15 @@
     android:orientation="vertical"
     tools:context=".ShowNextBus">
 
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="3dp"
+        android:text="Back" />
+
     <androidx.appcompat.widget.SearchView
         android:id="@+id/mySearchBar"
         android:layout_width="match_parent"
