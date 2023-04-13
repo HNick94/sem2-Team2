@@ -6,9 +6,6 @@ Design and create a simple data tracking android app to support Melbourne Transi
 
 Group Member : 
 
-- Shahneezar
-- Nishant
-- Siaw
 - Nick 
-- Moses
+
 
